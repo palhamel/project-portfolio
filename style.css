@@ -1,5 +1,5 @@
 
-/* mobile first */
+/* mobile first 375pix */
 body {
   margin: 0px;
 }
@@ -24,6 +24,15 @@ h3 {
   /* margin: 5px 0; */
 }
 
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  background-color: rgb(79, 134, 216);
+  padding: 3px 10px;
+  display: inline-block;
+  margin: 0 0 25px 0;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   color: #FFF;
@@ -32,12 +41,22 @@ h1 {
   margin: 5px 0;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
 
 
-/* my header styling */
+
+/* ---- my header styling ------ */
+
 header {
   height: 500px;
-  background-color: rgb(127, 178, 255);
+  background-color: rgb(79, 134, 216);
+  /* background-image: url(/img/bg_levi-bare-2000x2000.png); */
+  background-size: cover;
+  background-position: top left;
   padding: 10px 10px 0 10px;
  /*  display: flex;
   flex-direction: column;
@@ -51,16 +70,16 @@ header {
   margin: 0 auto;
 }
 
-.header-icons {
-  padding: 20px 10px;
+.header-icons-box {
+  padding: 30px 10px;
   display: flex;
   flex-direction: row;
   position: absolute; 
   top: 70px;
   right: 10%;
 }
-.header-icons a {
-  margin-left: 12px;
+.header-box a {
+  margin-left: 5px;
 }
 
 .header-icon-link { 
@@ -72,6 +91,10 @@ header {
   border: 3px solid #FFF;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.header-icon-img {
+  width: 14px;
 }
 
 .header-text-box {
@@ -100,7 +123,6 @@ header h3 {
   width: 160px; 
   position: absolute; 
   margin: 0;
-
 }
 
 .header-profile-img {
@@ -109,39 +131,160 @@ header h3 {
   border: 3px solid white;
 }
 
-
-
 /* old? */
 /* .header-text {
   color: brown;
-
 }
-
 .icon {
   border: 10px solid black;
   border-radius: 50%;
+}*/
+
+
+
+
+/* ---- my Main Section - Summery Text - styling ------ */
+
+main {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.box-bg-grey {
+  background-color:#F4F4F4;
+}
+
+.summary-text, .tech-text {
+  padding: 50px 10%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.summary-text p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+
+/* kolla dessa om det funkar - koden - css ::after creates a pseudo-element */
+.line-sep-dot {
+  height: 3px;
+  width: 50px;
+  background-color:  rgb(79, 134, 216);
+  position: relative;
+  float: left;
+  top: 12px;
+  margin-right: 10px;  
+}
+.line-sep-dot::after {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color:  rgb(79, 134, 216);
+  content: "";
+  float: right;
+  top: -4px;
+  position: relative;
+}
+
+/* ---- my Main Section - Tech - styling ------ */
+
+.box-bg-white {
+  background-color: white;
+}
+
+.tech-text {
 
 }
 
- */
+.tech-text h2 {
+text-transform: uppercase;
+}
+
+.tech-text p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* responsive design */
-
 /* 2 screens är ok - bestämma storlekar själv */
-/* 
-@media (min-width: 700px){
+
+/* ----------- 668px TABLET ------------------ */
+
+@media (min-width: 668px){
+
+  .header-icon-link { 
+    width: 70px;
+    height: 70px;
+  }
+  .header-icon-img { 
+    width: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 58px;
+  }
+  .header-text-box {
+    width: 45%;
+  }
+  .header-text-box h4 {
+    font-size: 16px;
+  }
+
+  .header-profile-box {
+    width: 220px; 
+    top: 300px;
+  }
+
+  
+} 
 
 
-  header {
 
+/* -----------900px DESKTOP ------------------ */
+
+@media (min-width: 900px){
+
+
+
+  h4 {
+    font-size: 23px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .header-box a {
+    margin-left: 10px;
   }
   
-  .profil-pict {
-  
-
+  .header-text-box {
+    width: 35%;
   }
-  
-} */
+  .header-text-box h4 {
+    font-size: 24px;
+  }
+  .header-profile-box {
+    width: 280px; 
+    top: 250px;
+  }
 
+
+  
+} 
