@@ -167,7 +167,9 @@ main {
 .tech-text,
 .projects-box,
 .projects-others,
-.my-thoughts-box {
+.my-thoughts-box,
+.more-thoughts-box,
+.skills-section {
   padding: 50px 10%;
   margin: 0 auto;
   max-width: 1000px;
@@ -305,9 +307,6 @@ main {
 }
 /* ---- my OTHER Section - styling ------ */
 
-.projects-others {
-  
-}
 
 .projects-others h3 {
   text-transform: uppercase;
@@ -336,7 +335,7 @@ main {
   text-transform: uppercase;
   color: rgb(79, 134, 216);
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
   margin: 20px 3px 0 0px;
 }
 
@@ -373,6 +372,79 @@ main {
   font-family: 'Roboto', sans-serif;
   margin: 5px 0 15px;
 }
+
+/* ---- my MORE THOUGHTS Section - styling ------ */
+
+.more-thoughts-box h3 {
+  text-transform: uppercase;
+  color: rgb(79, 134, 216);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.more-thoughts-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.more-thoughts-text {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+
+.more-thoughts-text-marked {
+  text-transform: uppercase;
+  color: rgb(79, 134, 216);
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20px 3px 0 0px;
+}
+
+/* ---- my SKILLS Section - styling ------ */
+
+.skills-section h2 {
+  text-transform: uppercase;
+}
+
+.skills-section-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+
+}
+
+.skills-section-box h4 {
+  text-transform: uppercase;
+  color: rgb(79, 134, 216);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 15px 0;
+ }
+
+ li {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+
+
+
+
 
 
 
