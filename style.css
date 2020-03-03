@@ -165,7 +165,9 @@ main {
 
 .summary-text,
 .tech-text,
-.projects-box {
+.projects-box,
+.projects-others,
+.my-thoughts-box {
   padding: 50px 10%;
   margin: 0 auto;
   max-width: 1000px;
@@ -222,39 +224,44 @@ main {
 
 /* ---- kontrollera denna kod:: ------ */
 
-/* .projects-flex-box {
+.projects-flex-box {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 10px;
-} */
-
-
-.projects-card-space {
-
-  /* no one home here */
 }
 
-.projects-card-title {
+.projects-card-space {
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.projects-title-on-card {
   font-family: 'Montserrat', sans-serif;
-  color: rgb(79, 134, 216);
+  color: rgb(215, 228, 247);
   /* background-color: rgb(79, 134, 216); */
-  /* padding: 3px 10px; */
+  padding: 3px 10px;
   display: inline-block;
-  /* margin: 0 0 25px 0; */
+  margin: 0 0 5px 0;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
   align-self: center;
-  padding-top: 25%;
+  /* padding-top: 25%; */
+  top: 30%;
+  position: absolute;
 }
 
 .projects-card-bg-img {
-  height: 180px;
+  height: 182px;
   width: 100%;
   background-size: cover;
-  box-shadow: inset 0 0 0 100vmax rgba(223, 229, 233, 0.8);
+  box-shadow: inset 0 0 0 100vmax rgba(49, 89, 116, 0.8);
   background-position: center center;
 }
 
@@ -278,6 +285,93 @@ main {
   color: rgb(79, 134, 216);
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.projects-techinfo-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
+}
+
+.techinfo-label {
+  background-color: rgb(155, 193, 249);
+  color: #FFF;
+  display: inline-block;
+  padding: 3px 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin-right: 3px;
+}
+/* ---- my OTHER Section - styling ------ */
+
+.projects-others {
+  
+}
+
+.projects-others h3 {
+  text-transform: uppercase;
+  color: rgb(79, 134, 216);
+  font-size: 24px;
+  font-weight: 700;
+}
+.projects-others-card {
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* ---- my MY THOUGHTS Section - styling ------ */
+
+.my-thoughts-box h2 {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+.my-thoughts-box p {
+  text-transform: uppercase;
+  color: rgb(79, 134, 216);
+  font-size: 20px;
+  font-weight: 200;
+  margin: 20px 3px 0 0px;
+}
+
+.my-thoughts-flex-box {
+  margin-top: 20px;
+}
+.my-thoughts-card-space{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.my-thoughts-img {
+  height: 240px;
+  width: 100%;
+  background-size: cover;
+  /* box-shadow: inset 0 0 0 100vmax rgba(49, 89, 116, 0.8); */
+  background-position: center center;
+}
+
+.my-thoughts-title-on-card {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-thoughts-text {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px 0 15px;
 }
 
 
