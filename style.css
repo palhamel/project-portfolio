@@ -1,7 +1,7 @@
-
 /* mobile first 375pix */
 body {
   margin: 0px;
+  
 }
 
 /* basic font styling */
@@ -47,6 +47,10 @@ p {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 
 /* ---- my header styling ------ */
@@ -58,7 +62,7 @@ header {
   background-size: cover;
   background-position: top left;
   padding: 10px 10px 0 10px;
- /*  display: flex;
+  /*  display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between; */
@@ -74,18 +78,19 @@ header {
   padding: 30px 10px;
   display: flex;
   flex-direction: row;
-  position: absolute; 
+  position: absolute;
   top: 70px;
   right: 10%;
 }
+
 .header-box a {
   margin-left: 5px;
 }
 
-.header-icon-link { 
+.header-icon-link {
   width: 30px;
   height: 30px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border: 3px solid #FFF;
@@ -99,10 +104,11 @@ header {
 
 .header-text-box {
   width: 75%;
-  position: absolute; 
+  position: absolute;
   top: 170px;
   left: 10%;
 }
+
 header h4 {
   color: #FFF;
   letter-spacing: 1.2px;
@@ -110,9 +116,11 @@ header h4 {
   font-weight: 300;
   margin: 5px 0;
 }
+
 header h3 {
   margin: 10px 0;
 }
+
 .header-text-name-focus {
   font-weight: 700;
 }
@@ -120,8 +128,8 @@ header h3 {
 .header-profile-box {
   top: 360px;
   right: 10%;
-  width: 160px; 
-  position: absolute; 
+  width: 160px;
+  position: absolute;
   margin: 0;
 }
 
@@ -150,15 +158,19 @@ main {
   text-align: center;
   flex-direction: column;
 }
+
 .box-bg-grey {
-  background-color:#F4F4F4;
+  background-color: #F4F4F4;
 }
 
-.summary-text, .tech-text {
+.summary-text,
+.tech-text,
+.projects-box {
   padding: 50px 10%;
   margin: 0 auto;
   max-width: 1000px;
 }
+
 .summary-text p {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
@@ -168,43 +180,105 @@ main {
 .line-sep-dot {
   height: 3px;
   width: 50px;
-  background-color:  rgb(79, 134, 216);
+  background-color: rgb(79, 134, 216);
   position: relative;
   float: left;
   top: 12px;
-  margin-right: 10px;  
+  margin-right: 10px;
 }
+
 .line-sep-dot::after {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color:  rgb(79, 134, 216);
+  background-color: rgb(79, 134, 216);
   content: "";
   float: right;
   top: -4px;
   position: relative;
 }
 
-/* ---- my Main Section - Tech - styling ------ */
+/* ---- my TECH Section - styling ------ */
 
 .box-bg-white {
   background-color: white;
 }
 
-.tech-text {
-
-}
+.tech-text {}
 
 .tech-text h2 {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .tech-text p {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* ---- my PROJECTS Section - styling ------ */
+
+.projects-box h2 {
+  text-transform: uppercase;
+}
+
+/* ---- kontrollera denna kod:: ------ */
+
+/* .projects-flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+} */
 
 
+.projects-card-space {
+
+  /* no one home here */
+}
+
+.projects-card-title {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(79, 134, 216);
+  /* background-color: rgb(79, 134, 216); */
+  /* padding: 3px 10px; */
+  display: inline-block;
+  /* margin: 0 0 25px 0; */
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  align-self: center;
+  padding-top: 25%;
+}
+
+.projects-card-bg-img {
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vmax rgba(223, 229, 233, 0.8);
+  background-position: center center;
+}
+
+
+.projects-card-text {
+  margin: 15px 0;
+  color: #000;
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-text-marked {
+  color: rgb(79, 134, 216);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-arrow-marked {
+  text-decoration: underline;
+  color: rgb(79, 134, 216);
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 
 
@@ -220,71 +294,82 @@ text-transform: uppercase;
 
 /* ----------- 668px TABLET ------------------ */
 
-@media (min-width: 668px){
+@media (min-width: 668px) {
 
-  .header-icon-link { 
+  .header-icon-link {
     width: 70px;
     height: 70px;
   }
-  .header-icon-img { 
+
+  .header-icon-img {
     width: 30px;
   }
+
   h4 {
     font-size: 20px;
   }
+
   h3 {
     font-size: 25px;
   }
+
   h1 {
     font-size: 58px;
   }
+
   .header-text-box {
     width: 45%;
   }
+
   .header-text-box h4 {
     font-size: 16px;
   }
 
   .header-profile-box {
-    width: 220px; 
+    width: 220px;
     top: 300px;
   }
 
-  
-} 
+
+}
 
 
 
 /* -----------900px DESKTOP ------------------ */
 
-@media (min-width: 900px){
+@media (min-width: 900px) {
 
 
 
   h4 {
     font-size: 23px;
   }
+
   h3 {
     font-size: 30px;
   }
+
   h1 {
     font-size: 70px;
   }
+
   .header-box a {
     margin-left: 10px;
   }
-  
+
   .header-text-box {
     width: 35%;
   }
+
   .header-text-box h4 {
     font-size: 24px;
   }
+
   .header-profile-box {
-    width: 280px; 
+    width: 280px;
     top: 250px;
   }
 
 
-  
-} 
+
+}
