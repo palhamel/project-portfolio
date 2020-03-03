@@ -1,11 +1,9 @@
 /* mobile first 375pix */
 body {
   margin: 0px;
-  
 }
 
-/* basic font styling */
-
+/* base font styling */
 h4 {
   font-family: 'Roboto', sans-serif;
   color: #FFF;
@@ -57,8 +55,10 @@ a {
 
 header {
   height: 500px;
-  background-color: rgb(79, 134, 216);
+  /* background-color: rgb(79, 134, 216); */
   /* background-image: url(/img/bg_levi-bare-2000x2000.png); */
+  background-image: url(/img/bg_levi-bare-750x750.png);
+  box-shadow: inset 0 0 0 100vmax rgba(23, 74, 108, 0.625);
   background-size: cover;
   background-position: top left;
   padding: 10px 10px 0 10px;
@@ -69,9 +69,9 @@ header {
 }
 
 .header-box {
+  margin: 0 auto;
   max-width: 1100px;
   position: relative;
-  margin: 0 auto;
 }
 
 .header-icons-box {
@@ -241,6 +241,7 @@ main {
   text-align: left;
   width: 100%;
   margin-bottom: 30px;
+  /* max-width: 340px; */
 }
 
 .projects-title-on-card {
@@ -371,6 +372,7 @@ main {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   margin: 5px 0 15px;
+  line-height: 1.5;
 }
 
 /* ---- my MORE THOUGHTS Section - styling ------ */
@@ -393,7 +395,7 @@ main {
 
 .more-thoughts-text {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #000;
 }
@@ -478,8 +480,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
 .more-icon-img {
@@ -524,6 +524,21 @@ footer h4 {
 
 @media (min-width: 668px) {
 
+  header {
+    /* height: 500px; */
+    /* background-color: rgb(79, 134, 216); */
+    /* background-image: url(/img/bg_levi-bare-2000x2000.png); */
+    background-image: url(/img/bg_levi-bare-1400x1400.png);
+    /* box-shadow: inset 0 0 0 100vmax rgba(23, 74, 108, 0.625);
+    background-size: cover;
+    background-position: top left;
+    padding: 10px 10px 0 10px; */
+    /*  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between; */
+  }
+
   .header-icon-link {
     width: 70px;
     height: 70px;
@@ -538,7 +553,11 @@ footer h4 {
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 
   h1 {
@@ -557,6 +576,52 @@ footer h4 {
     width: 220px;
     top: 300px;
   }
+  .projects-flex-box {
+    flex-direction: row;
+  }
+  .projects-card-space {
+    /* margin-left: 20px;
+    max-width: 340px; */
+    width: 49%;
+  }
+
+  .my-thoughts-box h2 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+
+
+
+
+
+
+  .more-section-links p {
+    font-size: 18px;
+  }
+
+  .more-icon-link {
+    width: 80px;
+    height: 80px;
+  }
+
+  .more-icon-img {
+    width: 30px;
+  }
+
+
+  footer h3 {
+    font-size: 28px;
+  }
+  footer h4 {
+    font-size: 24px;
+  }
+  footer p {
+    font-size: 22px;
+  }
+
 
 
 }
@@ -566,6 +631,21 @@ footer h4 {
 /* -----------900px DESKTOP ------------------ */
 
 @media (min-width: 900px) {
+
+  header {
+    /* height: 500px; */
+    /* background-color: rgb(79, 134, 216); */
+    /* background-image: url(/img/bg_levi-bare-2000x2000.png); */
+    background-image: url(/img/bg_levi-bare-2000x2000.png);
+    /* box-shadow: inset 0 0 0 100vmax rgba(23, 74, 108, 0.625);
+    background-size: cover;
+    background-position: top left;
+    padding: 10px 10px 0 10px; */
+    /*  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between; */
+  }
 
 
 
@@ -596,6 +676,73 @@ footer h4 {
   .header-profile-box {
     width: 280px;
     top: 250px;
+  }
+
+  .projects-card-space {
+    /* margin-left: 20px; */
+    /* max-width: 400px;  */
+    width: 45%;
+  }
+  .projects-title-on-card {
+/*     font-family: 'Montserrat', sans-serif;
+    color: rgb(215, 228, 247);
+    padding: 3px 10px;
+    display: inline-block;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-weight: 700; */
+    font-size: 22px;
+/*     align-self: center;
+    /* padding-top: 25%; */
+    top: 30%;
+    position: absolute; */
+  }
+  .projects-card-bg-img {
+    height: 250px;
+  }
+  .projects-others h3 {
+    font-size: 30px;
+  }
+  .projects-card-text {
+    font-size: 22px;
+  }
+  .my-thoughts-flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  .my-thoughts-card-space{
+    width: 45%;
+  }
+  .my-thoughts-text {
+    font-size: 22px;
+  }
+  .more-thoughts-box h3 {
+    font-size: 30px;
+  }
+  .more-thoughts-text {
+    font-size: 22px;
+  }
+
+  .skills-section-left {
+    width: 30%;
+  }
+  .skills-section-right {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .skills-section-box h4 {
+  
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+   li {
+    font-size: 20px;
+    /* line-height: 2; */
   }
 
 
