@@ -23,3 +23,5 @@ Mission was to build a portfolio and follow the design guides. Using flexbox, ma
 
 ## View it live on Netlify:
 https://www.palhamel.dev/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/67774e55-3d78-4433-9e8a-d237aeaa2d43/deploy-status)](https://app.netlify.com/sites/palhamelportfolio/deploys)
